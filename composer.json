@@ -23,7 +23,7 @@
     "extra": {
         "laravel": {
             "providers": [
-                "Subhra\\Pesapal\\PesapalServiceProvider"
+                "Subhra\\Pesapal\\Providers\\PesapalServiceProvider"
             ],
             "aliases": {
                 "Pesapal": "Subhra\\Pesapal\\PesapalFacade"
