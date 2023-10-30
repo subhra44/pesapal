@@ -11,13 +11,15 @@
             "Subhra\\Pesapal\\": "src/"
         }
     },
-    "minimum-stability": "stable",
+    "homepage": "https://github.com/subhra44/pesapal",
+    "license": "MIT",
     "authors": [
         {
             "name": "Subhra Jyoti Bhuyan",
             "email": "subhra@gmail.com"
         }
     ],
+    "minimum-stability": "stable",
     "extra": {
         "laravel": {
             "providers": [
