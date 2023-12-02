@@ -33,14 +33,15 @@ class Pesapal
         $order['notification_id'] = $IPN_id;
         $order['callback_url'] = $callback_url;
 
-        // return $this->helper->getMerchertOrderURL($order, $access_token);
-        $data = $this->helper->getMerchertOrderURL($order, $access_token);
+        return $this->helper->getMerchertOrderURL($order, $access_token);
+        /* $data = $this->helper->getMerchertOrderURL($order, $access_token);
+        dd($data);
         $iframe_src = "";
         if ($data->redirect_url) {
             $iframe_src = $data->redirect_url;
         }
 
-        return '<iframe src="' . $iframe_src . '" width="100%" height="100%" scrolling="auto" frameBorder="0"> <p>Unable to load the payment page</p> </iframe>';
+        return '<iframe src="' . $iframe_src . '" width="100%" height="100%" scrolling="auto" frameBorder="0"> <p>Unable to load the payment page</p> </iframe>'; */
     }
 
     public function getTransactionStatus($orderTrackingId)
